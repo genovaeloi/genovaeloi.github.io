@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Responsive design</title>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+
+<body>
+	
+	<!-- nav bar -->
+	<div class="navBar" id="mynavBar">
+	  <a href="#home" class="active">Home</a>
+	  <a href="#news">News</a>
+	  <a href="#contact">Contact</a>
+	  <a href="#about">About</a>
+	  <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+	</div>
+
+	<!-- icon -->
+	<img src="img/bird.png" id='img'>
+
+		<div style="padding-left:60%">
+	  <h2>Responsive Topnav Example</h2>
+	  <p>Resize the browser window to see how it works.</p>
+	</div>
+
+	<script>
+	function myFunction() {
+	    var x = document.getElementById("mynavBar");
+	    if (x.className === "navBar") {
+	        x.className += " responsive";
+	    } else {
+	        x.className = "navBar";
+	    }
+	}
+	</script>
+
+</body>
+
+</html>
